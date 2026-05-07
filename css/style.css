@@ -1278,8 +1278,11 @@ button:disabled {
     padding: 4px 0 0;
   }
 
-  #entryText {
-    min-height: 116px;
+  .tab-panel[data-tab-panel="write"] #entryText {
+    height: 106px;
+    min-height: 106px;
+    max-height: 106px;
+    overflow-y: auto;
   }
 
   button {
