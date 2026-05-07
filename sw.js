@@ -1,4 +1,4 @@
-const CACHE_NAME = "akari-note-v3";
+const CACHE_NAME = "akari-note-v8";
 const APP_SHELL = [
   "./",
   "./index.html",

@@ -139,7 +139,7 @@ a {
   body.is-lantern-lit
     .app:has(.tab-nav[data-active-tab="write"])
     .app-header::before {
-    animation: lantern-flare 1400ms ease;
+    animation: lantern-flare 2200ms ease;
   }
 }
 
@@ -1185,10 +1185,10 @@ button:disabled {
   .app-header::after {
     content: "";
     position: absolute;
-    top: -62px;
-    right: -14px;
-    width: 144px;
-    height: 250px;
+    top: -48px;
+    right: -12px;
+    width: 128px;
+    height: 222px;
     pointer-events: none;
     background-image: url("../images/hanging_lantern.webp");
     background-position: center;
@@ -1205,10 +1205,10 @@ button:disabled {
   .app-header::before {
     content: "";
     position: absolute;
-    top: 36px;
-    right: 31px;
-    width: 46px;
-    height: 46px;
+    top: 40px;
+    right: 30px;
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
     background: radial-gradient(
       circle,
@@ -1240,7 +1240,7 @@ button:disabled {
   body.is-lantern-lit
     .app:has(.tab-nav[data-active-tab="write"])
     .app-header::before {
-    animation: lantern-flare 1400ms ease;
+    animation: lantern-flare 2200ms ease;
   }
 
   .entry-panel,
@@ -1268,6 +1268,11 @@ button:disabled {
     margin-left: 0;
   }
 
+  .search-field input,
+  .auth-form input {
+    font-size: 16px;
+  }
+
   .random-panel {
     grid-template-columns: 1fr;
   }
@@ -1283,9 +1288,9 @@ button:disabled {
   }
 
   .tab-panel[data-tab-panel="write"] #entryText {
-    height: 132px;
-    min-height: 132px;
-    max-height: 132px;
+    height: 140px;
+    min-height: 140px;
+    max-height: 140px;
     overflow-y: auto;
   }
 

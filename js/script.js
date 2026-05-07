@@ -100,7 +100,7 @@ function glowLantern() {
   lanternGlowTimer = setTimeout(() => {
     document.body.classList.remove("is-lantern-lit");
     lanternGlowTimer = null;
-  }, 1400);
+  }, 2200);
 }
 
 function revealLanternOnSmallScreen() {
@@ -1355,6 +1355,13 @@ if (authCodeForm) {
 entrySearch.addEventListener("input", () => {
   currentSearchText = entrySearch.value.trim();
   renderEntries();
+});
+
+entrySearch.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    entrySearch.blur();
+  }
 });
 
 entryFilterButtons.forEach((button) => {
