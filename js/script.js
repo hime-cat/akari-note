@@ -103,6 +103,17 @@ function glowLantern() {
   }, 1400);
 }
 
+function revealLanternOnSmallScreen() {
+  if (!window.matchMedia("(max-width: 640px)").matches) {
+    return;
+  }
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+
 function isUuid(text) {
   return /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(
     text
@@ -1218,7 +1229,8 @@ entryForm.addEventListener("submit", (event) => {
   const entry = addEntry(text);
   newlyLitEntryId = entry.id;
   entryText.value = "";
-  entryText.focus();
+  entryText.blur();
+  revealLanternOnSmallScreen();
   glowLantern();
   renderAllEntries();
   syncEntryToSupabase(entry);
