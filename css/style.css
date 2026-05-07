@@ -19,6 +19,10 @@
 
 html {
   -webkit-text-size-adjust: 100%;
+  background:
+    radial-gradient(ellipse at center, transparent 42%, rgba(5, 10, 20, 0.26) 100%),
+    radial-gradient(circle at 18% 8%, rgba(255, 210, 122, 0.22), transparent 28rem),
+    linear-gradient(160deg, #1f3554 0%, var(--bg) 52%, #233044 100%);
   background-color: var(--bg);
   overflow-y: scroll;
   scrollbar-gutter: stable;
@@ -1181,10 +1185,10 @@ button:disabled {
   .app-header::after {
     content: "";
     position: absolute;
-    top: -48px;
-    right: -12px;
-    width: 128px;
-    height: 222px;
+    top: -62px;
+    right: -14px;
+    width: 144px;
+    height: 250px;
     pointer-events: none;
     background-image: url("../images/hanging_lantern.webp");
     background-position: center;
@@ -1201,10 +1205,10 @@ button:disabled {
   .app-header::before {
     content: "";
     position: absolute;
-    top: 40px;
-    right: 30px;
-    width: 42px;
-    height: 42px;
+    top: 36px;
+    right: 31px;
+    width: 46px;
+    height: 46px;
     border-radius: 50%;
     background: radial-gradient(
       circle,
@@ -1279,9 +1283,9 @@ button:disabled {
   }
 
   .tab-panel[data-tab-panel="write"] #entryText {
-    height: 106px;
-    min-height: 106px;
-    max-height: 106px;
+    height: 132px;
+    min-height: 132px;
+    max-height: 132px;
     overflow-y: auto;
   }
 
