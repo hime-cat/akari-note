@@ -1,4 +1,4 @@
-const CACHE_NAME = "akari-note-v8";
+const CACHE_NAME = "akari-note-v9";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -10,6 +10,7 @@ const APP_SHELL = [
   "./images/apple-touch-icon-180.png",
   "./images/pwa-icon-192.png",
   "./images/pwa-icon-512.png",
+  "./images/ogp.png",
   "./images/hanging_lantern.webp",
   "./manifest.webmanifest"
 ];
